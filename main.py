@@ -31,7 +31,7 @@ print(bcolors.BOLD + f"[!] Welcome To Joy SMS Forwarder\n")
 def smsforward():
     lastSMS = datetime.datetime.now()
     tmpFile = "tmpLastTime.txt"
-    filters = ["otp", "one time password", "OTP"]  # Add your filters here
+    filters = ["minutes", "Valid", "Secret"]  # Add your filters here
     headers = {'Content-Type': 'application/json'}
 
     if not os.path.exists(tmpFile):
